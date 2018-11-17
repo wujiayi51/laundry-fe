@@ -1,0 +1,191 @@
+/*公共使用的*/
+/*css 初始化 */
+body{
+    font-size: 14px;
+    font-family: "MicroSoft YaHei",sans-serif;/*设备默认字体*/
+    color: #888;
+}
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form,img {
+    margin: 0;
+    padding: 0;
+}
+/*img, input, button { 			!*表单中的相关元素*!*/
+    /*border: none;*/
+    /*padding: 0;*/
+    /*margin: 0;*/
+    /*outline-style: none;*/
+/*}*/
+ul, ol {
+    list-style: none;				/*清除列表风格*/
+    padding: 0;
+}
+select, input {
+    vertical-align: middle;
+}
+/*select, input, textarea {*/
+    /*font-size: 12px;*/
+    /*margin: 0;*/
+/*}*/
+
+textarea {
+    resize: none;
+}
+
+/*防止多行文本框拖动*/
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+/*  去掉图片低测默认的3像素空白缝隙*/
+table {
+    border-collapse: collapse;			/*合并外边线*/
+}
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover {
+   text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+
+
+/*公共类*/
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+.al {
+    text-align: left
+}
+
+.ac {
+    text-align: center
+}
+
+.ar {
+    text-align: right
+}
+
+.hide {
+    display: none
+}
+
+
+/* 小屏幕（平板，大于等于 768px） */
+@media (min-width:768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width:1200px) {
+    .container {
+        width: 1190px;
+    }
+}
+.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    min-height: 1px;
+    padding-right: 0;
+    padding-left: 0;
+}
+/*头部布局*/
+.header{
+    /*padding: 25px 0px;*/
+    height: 45px;
+    background-color: #4A4A4A;
+}
+.header .logo{
+    padding: 6.5px 40px;
+}
+.header .logo img{
+
+}
+.header_nav ul li{
+    float: left;
+    height: 45px;
+    padding: 10px 7.5px;
+    box-sizing: border-box;
+}
+.nav_border_bottom{
+    border-bottom: 4px solid #009688;
+    /*transition: border 2s;*/
+    /*-moz-transition: border 2s;	!* Firefox 4 *!*/
+    /*-webkit-transition: border 2s;	!* Safari 和 Chrome *!*/
+    /*-o-transition: border 2s;*/
+}
+.header_nav ul li a{
+    color: #fffef2;
+    font-size: 14px;
+}
+.header_nav ul li a img{
+    padding-right: 5px;
+}
+
+.dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
+    color: #262626;
+    text-decoration: none;
+    background-color: #009688;
+}
+.navbar-nav,.navbar-nav li{
+    height: 45px!important;
+}
+.navbar-nav,.navbar-nav li a{
+    display: block;
+    padding-bottom: 10px;
+}
+.dropdown>a{
+    color: #fff;
+}
+.dropdown:hover a{
+    color: #000000;
+}
+.header-right a{
+    color:#fff ;
+    line-height: 45px;
+}
+/*底部布局*/
+.bg_footer{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    background-color: #4A4A4A;;
+    text-align: center;
+    color: #fff;
+}

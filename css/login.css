@@ -1,0 +1,147 @@
+*{
+    margin:0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+@media (max-width:768px) {
+    .container {
+        width: 750px;
+    }
+    .bg{
+        background-image:url(../image/bg2.jpg);
+        padding-top: 50px;
+        background-attachment: scroll;
+        background-size: cover;
+    }
+    .xstitle{
+        font-family: '微软雅黑 Bold', '微软雅黑';
+        font-size: 22px;
+        color: white;
+        padding-left: 20px;
+        padding-bottom: 10px;
+    }
+    .loginbox{
+        padding-top: 30px;
+        /*background-color: rgba(0, 0, 0, 0.498039215686275);*/
+        background: rgba(0,0,0,0.3);
+        /*height: 300px;*/
+        width: 100%;
+    }
+}
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width:1200px) {
+    .container {
+        width: 1190px;
+    }
+}
+    .bg{
+        /*background:url(../image/bg.jpg) no-repeat -100px center;*/
+        background:url(../image/bg.jpg);
+        padding-top: 150px;
+        background-attachment: scroll;
+        background-size: cover;
+    }
+    .loginbox{
+        padding-top: 30px;
+        /*background-color: rgba(0, 0, 0, 0.498039215686275);*/
+        background: rgba(0,0,0,0.3);
+        height: 300px;
+        width: 100%;
+    }
+    .center{
+        padding-left: 30px;
+    }
+
+    .title{
+        font-family: '微软雅黑 Bold', '微软雅黑';
+        font-size: 48px;
+        font-weight: 700;
+        color: white;
+        padding-left: 20px;
+        padding-bottom: 10px;
+    }
+    .logo img{
+        width: 66px;
+        height:66px;
+        float: left;
+        position: absolute;
+        top:20px;
+    }
+    .tip{
+        color: #FFA847;
+        font-family:'FontAwesome';
+        padding-top: 8px;
+    }
+    .copyright{
+        font-family: '微软雅黑';
+        font-weight: 400;
+        font-style: normal;
+        font-size: 12px;
+        color: #CCCCCC;
+        line-height: 24px;
+        padding-top: 90px;
+        padding-left:35px;
+    }
+    .loginbtn a{
+        display: block;
+        width: 36px;
+        height: 36px;
+        background-image:url(../image/login.png);
+        background-repeat:no-repeat;
+        background-size:36px 36px;
+    }
+
+    .loginbtn a:hover{
+        background-image:url(../image/alogin.png);
+        background-size:36px 36px;
+
+    }
+    .form-control-feedback {
+        position: absolute;
+        top: 0;
+        left:15px;
+        display: block;
+        width: 34px;
+        height: 34px;
+        line-height: 34px;
+        text-align: center;
+        pointer-events: none;
+    }
+    .logo img{
+        width: 48px;
+        height: 48px;
+    }
+    .choosebox{
+        position: absolute;
+        top:155px;
+        right:0;
+        display: none;
+    }
+    .choosebox li{
+        background: rgba(0,0,0,0.3);
+        color: white;
+        padding: 5px 10px;
+        list-style: none;
+    }
+    .choosebox li:hover{
+    background-color: #4A4A4A;
+    color: rgb(26,188,156);
+    }
+    .register{
+        margin-top: 10px;
+    }
+    .register a{
+        font-size: 14px;
+        font-weight: 700;
+        /*color: rgb(26, 186, 153);*/
+        color:  #4A4A4A;
+    }
+    .xsbtnlogin{
+        margin-left: 15px;
+        margin-top: 20px;
+
+    }
+

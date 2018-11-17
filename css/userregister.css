@@ -1,0 +1,16 @@
+
+input{
+    border: none;
+}
+.rowcss{
+    padding: 10px 10px;
+    border-bottom: 1px solid #DDDDDD;
+}
+.rowcss span{
+    color: #FF8002;
+    font-size:18px;
+    font-weight:400;
+    text-align: center;
+    margin-right: 15px;
+    float: right;
+}

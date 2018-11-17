@@ -1,0 +1,17 @@
+
+
+
+.input{
+    border: none;
+    width: 70px;
+}
+.onecomp{
+    padding: 5px 10px;
+    color: #9A9A9A;
+    border-bottom: 6px solid #F7F7F7;
+}
+.onecomp a{
+    /*display: block;*/
+    margin-left: 110px;
+    text-decoration: none;
+}

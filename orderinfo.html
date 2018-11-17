@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>填写订单信息</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/usermain.css" rel="stylesheet" type="text/css">
+    <link href="css/clothlist.css" rel="stylesheet" type="text/css">
+    <link href="css/orderinfo.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container-fluid ">
+    <div class="row headtitle ">
+        <div class="col-xs-11 "><a href="usermain.html"><img src="image/return.png">浣衣纱干洗中心</a></div>
+        <div class="col-xs-1 user"><img src="image/us.png"></div>
+    </div>
+    <div class="userinfo">
+        <ul>
+            <li>关于我们</li>
+            <li>修改密码</li>
+            <li>退出账号</li>
+        </ul>
+    </div>
+    <form class="form">
+        <div class="row rowcss">
+            <img src="image/me.png">
+            <input type="text" class="input" id="name" placeholder="姓名">
+            <input type="text" class="input" id="phne" placeholder="手机号">
+            <img src="image/phone.png">
+        </div>
+        <div class="row rowcss">
+            <img src="image/address.png">
+            <input type="text" class="input"style="width: 292px" id="address" placeholder="请选择您的地址">
+            <img src="image/aaddress.png">
+        </div>
+        <div class="row rowcss">
+            <img src="image/time.png">
+            <input type="text" class="input" id="" placeholder="取衣日期">
+            <input type="text" class="input" id="" placeholder="取衣时间">
+        </div>
+        <div class="row rowcss">
+            <img src="image/liuyan.png">
+            <input type="text" class="input" id="" placeholder="备注（选填）">
+        </div>
+    </form>
+    <div class="row">
+        <div class="col-xs-12 dividline"></div>
+    </div>
+    <form  class="form">
+        <div class="row rowcss">
+            <input type="text" class="input" style="width: 300px" placeholder="衣物件数">
+            <span>6</span>
+        </div>
+        <div class="row rowcss">
+            <input type="text" class="input" style="width: 300px" placeholder="商品金额">
+            <span>6</span>
+        </div>
+        <div class="row rowcss">
+            <input type="text" class="input" style="width: 300px" placeholder="优惠">
+            <span>6</span>
+        </div>
+        <div class="row rowcss">
+            <input type="text" class="input" style="width: 300px" placeholder="合计：">
+            <span>￥130.00</span>
+        </div>
+    </form>
+    <div class="row">
+        <div class="col-xs-12 dividline"></div>
+    </div>
+    <div class="row payway">
+        <div class="col-xs-12">
+            <span>请选择支付方式:</span>
+        </div>
+        <div class="col-xs-6">
+            <img src="image/agou.png">
+            <span class="paywayfont">余额支付</span>
+            <span class="paywayfont">(余额<span style="color: #FF8002;font-size:14px;">0元</span>)</span>
+        </div>
+        <div class="col-xs-6">
+            <img src="image/gou.png" class="">
+            <span class="paywayfont">微信支付</span>
+
+        </div>
+    </div>
+</div>
+
+<!--<!-底部固定-&ndash;&gt;-->
+<div class="container-fluid">
+    <div class="row pd footer navbar-fixed-bottom">
+        <!--<div class="col-xs-3 pic">-->
+            <!--<span>应付：</span>  <span>￥130.0</span>-->
+        <!--</div>-->
+        <div class="col-xs-6"> <span style="line-height:36px;font-size: 22px;color: #1BBAF6;text-align: center">应付：￥130.00</span></div>
+        <div class="col-xs-3 btnorder btn btn-info">立即支付</div>
+    </div>
+</div>
+
+</body>
+</html>

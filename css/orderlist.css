@@ -1,0 +1,36 @@
+
+.ordernav>div{
+    float: left;
+    text-align: center;
+    margin:10px 0;
+    list-style: none;
+    font-size: 16px;
+    color: #949494;
+    font-weight: 500;
+}
+
+.adcss{
+    color:#3DA9D4 ;
+    border-bottom: 2px solid #3DA9D4;
+    margin: 0 10px;
+
+}
+.input{
+    border: none;
+    width: 70px;
+}
+.oneorder{
+    padding: 5px 0 5px 10px;
+    color: #9A9A9A;
+}
+.orderfoot{
+    border-top: 1px solid #DEDEDE;
+    border-bottom: 6px solid #F7F7F7;
+    padding: 8px 10px 8px 25px;
+    text-align: center;
+}
+.orderfoot img{
+    width: 18px;
+    height: 18px;
+    text-align: center;
+}

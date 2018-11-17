@@ -1,0 +1,10 @@
+.rowcss{
+    padding: 10px 10px;
+    border-bottom: 1px solid #DDDDDD;
+}
+.form{
+    padding: 10px 10px;
+    color: silver;
+    font-weight: 100;
+    /*text-align: center;*/
+}

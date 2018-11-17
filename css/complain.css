@@ -1,0 +1,9 @@
+b{
+    color: red;
+}
+.comform{
+    padding: 10px 30px;
+}
+.comform>button{
+    float: right;
+}

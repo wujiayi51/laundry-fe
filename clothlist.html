@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>衣服分类列表</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/usermain.css" rel="stylesheet" type="text/css">
+    <link href="css/clothlist.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<script type="text/javascript">
+    $(function(){
+        $("#li1").click(function(){
+        $("#onelist").show();
+            $("#twolist").hide();
+            $("#fivelist").hide();
+            $("#threelist").hide();
+            $("#fourlist").hide();
+        });
+        $("#li2").click(function(){
+            $("#onelist").hide();
+            $("#fivelist").hide();
+            $("#threelist").hide();
+            $("#fourlist").hide();
+            $("#twolist").show();
+        });
+        $("#li3").click(function(){
+            $("#onelist").hide();
+            $("#fivelist").hide();
+            $("#twolist").hide();
+            $("#fourlist").hide();
+            $("#threelist").show();
+        });
+        $("#li4").click(function(){
+            $("#onelist").hide();
+            $("#fivelist").hide();
+            $("#threelist").hide();
+            $("#twolist").hide();
+            $("#fourlist").show();
+        });
+        $("#li5").click(function(){
+            $("#onelist").hide();
+            $("#twolist").hide();
+            $("#threelist").hide();
+            $("#fourlist").hide();
+            $("#fivelist").show();
+        });
+/*  遍历li 获取总width 水平滚动条  style="overflow-x:auto;"*/
+//        var widths='';
+//        for(var i=0;i<7;i++){
+//           parseInt(widths)+=parseInt($('ul>li').eq(i).width());
+//        }
+//        alert(widths);
+
+    });
+
+</script>
+<body>
+<div class="container-fluid ">
+    <div class="row headtitle ">
+        <div class="col-xs-11 "><a href="usermain.html"><img src="image/return.png">浣衣纱干洗中心</a></div>
+        <div class="col-xs-1 user"><img src="image/us.png"></div>
+    </div>
+    <div class="userinfo">
+        <ul>
+            <li>关于我们</li>
+            <li>修改密码</li>
+            <li>退出账号</li>
+        </ul>
+    </div>
+</div>
+<nav>
+    <ul class="nav navbar-default pre-scrollable">
+        <li id="li1" role="presentation" class="active"><a href="#">秋冬上衣</a></li>
+        <li id="li2" role="presentation"><a href="#">春夏上衣</a></li>
+        <li id="li3" role="presentation"><a href="#">裤子</a></li>
+        <li  id="li4" role="presentation"><a href="#">裙子</a></li>
+        <li  id="li5" role="presentation" class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">鞋靴</a></li>
+    </ul>
+</nav>
+<!--秋冬上衣-->
+<div class="container-fluid " id="onelist">
+    <div class="row list">
+        <div class="col-xs-5 clothname">
+            <img src="image/mao.png" class="img-responsive img-circle"><span>毛衣</span>
+        </div>
+        <div class="col-xs-4 price">价格：<span>15</span></div>
+        <div class="col-xs-3">
+        <img src="image/jian.png">
+        <span>0</span>
+        <img src="image/jia.png">
+        </div>
+    </div>
+    <div class="row list listbg">
+        <div class="col-xs-5 clothname">
+            <img src="image/mianfu.png" class="img-responsive img-circle"><span>棉服</span>
+        </div>
+        <div class="col-xs-4 price">价格：<span>15</span></div>
+        <div class="col-xs-3">
+            <img src="image/jian.png">
+            <span>0</span>
+            <img src="image/jia.png">
+        </div>
+    </div>
+    <div class="row list">
+        <div class="col-xs-5 clothname">
+            <img src="image/yu.png" class="img-responsive img-circle"><span>羽绒服</span>
+        </div>
+        <div class="col-xs-4 price">价格：<span>15</span></div>
+        <div class="col-xs-3">
+            <img src="image/jian.png">
+            <span>0</span>
+            <img src="image/jia.png">
+        </div>
+    </div>
+    <div class="row list listbg">
+        <div class="col-xs-5 clothname">
+            <img src="image/jk.png" class="img-responsive img-circle"><span>夹克</span>
+        </div>
+        <div class="col-xs-4 price">价格：<span>15</span></div>
+        <div class="col-xs-3">
+            <img src="image/jian.png">
+            <span>0</span>
+            <img src="image/jia.png">
+        </div>
+    </div>
+</div>
+
+<!--春夏上衣-->
+<div class="container-fluid" id="twolist">
+    <div class="row list">
+        <div class="col-xs-5 clothname">
+            <img src="image/censhan.png" class="img-responsive img-circle"><span>衬衫</span>
+        </div>
+        <div class="col-xs-4 price">价格：<span>15</span></div>
+        <div class="col-xs-3">
+            <img src="image/jian.png">
+            <span>0</span>
+            <img src="image/jia.png">
+        </div>
+    </div>
+    <div class="row list listbg">
+        <div class="col-xs-5 clothname">
+            <img src="image/fengyi.png" class="img-responsive img-circle"><span>风衣</span>
+        </div>
+        <div class="col-xs-4 price">价格：<span>15</span></div>
+        <div class="col-xs-3">
+            <img src="image/jian.png">
+            <span>0</span>
+            <img src="image/jia.png">
+        </div>
+    </div>
+    <div class="row list ">
+        <div class="col-xs-5 clothname">
+            <img src="image/xizhaung.png" class="img-responsive img-circle"><span>西装</span>
+        </div>
+        <div class="col-xs-4 price">价格：<span>15</span></div>
+        <div class="col-xs-3">
+            <img src="image/jian.png">
+            <span>0</span>
+            <img src="image/jia.png">
+        </div>
+    </div>
+    <div class="row list listbg">
+        <div class="col-xs-5 clothname">
+            <img src="image/yundong.png" class="img-responsive img-circle"><span>运动装</span>
+        </div>
+        <div class="col-xs-4 price">价格：<span>15</span></div>
+        <div class="col-xs-3">
+            <img src="image/jian.png">
+            <span>0</span>
+            <img src="image/jia.png">
+        </div>
+    </div>
+</div>
+<!--裤子-->
+<div class="container-fluid"  id="threelist">
+    <div class="row list">
+        <div class="col-xs-5 clothname">
+            <img src="image/niuzai.png" class="img-responsive img-circle"><span>牛仔裤</span>
+        </div>
+        <div class="col-xs-4 price">价格：<span>15</span></div>
+        <div class="col-xs-3">
+            <img src="image/jian.png">
+            <span>0</span>
+            <img src="image/jia.png">
+        </div>
+    </div>
+    <div class="row list listbg">
+        <div class="col-xs-5 clothname">
+            <img src="image/xiku.png" class="img-responsive img-circle"><span>西裤</span>
+        </div>
+        <div class="col-xs-4 price">价格：<span>15</span></div>
+        <div class="col-xs-3">
+            <img src="image/jian.png">
+            <span>0</span>
+            <img src="image/jia.png">
+        </div>
+    </div>
+    <div class="row list">
+        <div class="col-xs-5 clothname">
+            <img src="image/yundongku.png" class="img-responsive img-circle"><span>运动裤</span>
+        </div>
+        <div class="col-xs-4 price">价格：<span>15</span></div>
+        <div class="col-xs-3">
+            <img src="image/jian.png">
+            <span>0</span>
+            <img src="image/jia.png">
+        </div>
+    </div>
+    <div class="row list listbg">
+        <div class="col-xs-5 clothname">
+            <img src="image/piku.png" class="img-responsive img-circle"><span>皮裤</span>
+        </div>
+        <div class="col-xs-4 price">价格：<span>15</span></div>
+        <div class="col-xs-3">
+            <img src="image/jian.png">
+            <span>0</span>
+            <img src="image/jia.png">
+        </div>
+    </div>
+</div>
+<!--女裙-->
+<div class="container-fluid"  id="fourlist">
+    <div class="row list">
+        <div class="col-xs-5 clothname">
+            <img src="image/zhensi.png" class="img-responsive img-circle"><span>真丝裙</span>
+        </div>
+        <div class="col-xs-4 price">价格：<span>15</span></div>
+        <div class="col-xs-3">
+            <img src="image/jian.png">
+            <span>0</span>
+            <img src="image/jia.png">
+        </div>
+    </div>
+    <div class="row list">
+        <div class="col-xs-5 clothname">
+            <img src="image/lianyiqun.png" class="img-responsive img-circle"><span>连衣裙</span>
+        </div>
+        <div class="col-xs-4 price">价格：<span>15</span></div>
+        <div class="col-xs-3">
+            <img src="image/jian.png">
+            <span>0</span>
+            <img src="image/jia.png">
+        </div>
+    </div>
+    <div class="row list">
+        <div class="col-xs-5 clothname">
+            <img src="image/niuzaiqun.png" class="img-responsive img-circle"><span>牛仔裙</span>
+        </div>
+        <div class="col-xs-4 price">价格：<span>15</span></div>
+        <div class="col-xs-3">
+            <img src="image/jian.png">
+            <span>0</span>
+            <img src="image/jia.png">
+        </div>
+    </div>
+</div>
+<!--鞋靴-->
+<div class="container-fluid"  id="fivelist">
+    <div class="row list">
+        <div class="col-xs-5 clothname">
+            <img src="image/hool.png" class="img-responsive img-circle"><span>高跟鞋(绒面)</span>
+        </div>
+        <div class="col-xs-4 price">价格：<span>15</span></div>
+        <div class="col-xs-3">
+            <img src="image/jian.png">
+            <span>0</span>
+            <img src="image/jia.png">
+        </div>
+    </div>
+    <div class="row list">
+        <div class="col-xs-5 clothname">
+            <img src="image/hool2.png" class="img-responsive img-circle"><span>高跟鞋</span>
+        </div>
+        <div class="col-xs-4 price">价格：<span>15</span></div>
+        <div class="col-xs-3">
+            <img src="image/jian.png">
+            <span>0</span>
+            <img src="image/jia.png">
+        </div>
+    </div>
+    <div class="row list">
+        <div class="col-xs-5 clothname">
+            <img src="image/xuezi.png" class="img-responsive img-circle"><span>靴子</span>
+        </div>
+        <div class="col-xs-4 price">价格：<span>15</span></div>
+        <div class="col-xs-3">
+            <img src="image/jian.png">
+            <span>0</span>
+            <img src="image/jia.png">
+        </div>
+    </div>
+    <div class="row list">
+        <div class="col-xs-5 clothname">
+            <img src="image/fanbuxie.png" class="img-responsive img-circle"><span>帆布鞋</span>
+        </div>
+        <div class="col-xs-4 price">价格：<span>15</span></div>
+        <div class="col-xs-3">
+            <img src="image/jian.png">
+            <span>0</span>
+            <img src="image/jia.png">
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid">
+    <div class="row pd footer navbar-fixed-bottom">
+        <div class="col-xs-1 pic">
+            <img src="image/kuang.png" class="img-responsive">
+            <span class="badge">1</span>
+        </div>
+        <div class="col-xs-2 pd"> <span style="line-height:36px;font-size: 22px;color: #1BBAF6;text-align: center">95</span></div>
+        <div class="col-xs-3 btnorder btn btn-info"><a href="orderinfo.html">立即预约</a></div>
+    </div>
+</div>
+
+</body>
+</html>

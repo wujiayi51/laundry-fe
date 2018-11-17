@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>用户首页</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/usermain.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<script type="text/javascript">
+    //自动播放
+
+    $(function(){
+        $(".user").click(function(){
+            $(".userinfo").show().mouseleave(function(){
+                $(this).hide();
+            });
+        });
+        $("#main").click(function(){
+            $("#picmain").attr("src","image/amain.png");
+            $("#main").nextAll().click(function(){
+                $("#picmain").attr("src","image/main.png");
+            });
+            $("#main").css("color","red");
+        });
+        $("#order").click(function(){
+            $("#picorder").attr("src","image/aorder.png");
+            $("#order").sliding().click(function(){
+                $("#picorder").attr("src","image/order.png");
+            });
+        });
+        $("#mine").click(function(){
+            $("#picmine").attr("src","image/ame.png");
+            $("#mine").prevAll().click(function(){
+                $("#picmine").attr("src","image/me.png");
+            });
+        });
+
+    });
+</script>
+<style>
+    body{
+        overflow-x : hidden;
+        overflow-y : hidden;
+    }
+</style>
+<body>
+<div class="container-fluid">
+    <div class="row headtitle">
+        <div class="col-xs-11 pd">浣衣纱干洗中心</div>
+        <div class="col-xs-1 user"><img src="image/us.png"></div>
+    </div>
+    <div class="userinfo">
+        <ul>
+            <li><a href="">关于我们</a></li>
+            <li><a href="alterpwd.html">修改密码</a></li>
+            <li><a href="login.html">退出账号</a></li>
+        </ul>
+    </div>
+
+    <div>
+        <iframe src="main.html" width="100%" height="600px"></iframe>
+        <!--<iframe src="header.html" width="100%" scrolling="no" height="300px"></iframe>-->
+    </div>
+
+
+
+
+    <div class="row bottomnav pd navbar-fixed-bottom">
+        <div class="col-xs-4 " id="main"><img id="picmain" src="image/amain.png" class="img-responsive "> <a style="color: #1BBAF6">主页</a></div>
+        <div class="col-xs-3 col-xs-offset-1" id="order" style="padding-left: 10px"><img id="picorder" src="image/order.png" class="img-responsive "> <a href="orderlist.html">订单</a></div>
+        <div class="col-xs-2 col-xs-offset-2" id="mine" style="padding-left: 10px"><img id="picmine" src="image/me.png" class="img-responsive "> <a href="mine.html">我的</a></div>
+    </div>
+</div>
+</body>
+</html>

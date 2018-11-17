@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>用户首页</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/usermain.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<script type="text/javascript">
+    //自动播放
+
+    $(function(){
+        $(".user").click(function(){
+            $(".userinfo").show().mouseleave(function(){
+                $(this).hide();
+            });
+        });
+        $("#main").click(function(){
+            $("#picmain").attr("src","image/amain.png");
+            $("#main").nextAll().click(function(){
+                $("#picmain").attr("src","image/main.png");
+            });
+            $("#main").css("color","red");
+        });
+        $("#order").click(function(){
+            $("#picorder").attr("src","image/aorder.png");
+            $("#order").sliding().click(function(){
+                $("#picorder").attr("src","image/order.png");
+            });
+        });
+        $("#mine").click(function(){
+            $("#picmine").attr("src","image/ame.png");
+            $("#mine").prevAll().click(function(){
+                $("#picmine").attr("src","image/me.png");
+            });
+        });
+
+    });
+</script>
+<body>
+<div class="container-fluid">
+    <div class="row headtitle">
+        <div class="col-xs-11 pd">浣衣纱干洗中心</div>
+        <div class="col-xs-1 user"><img src="image/us.png"></div>
+    </div>
+    <div class="userinfo">
+        <ul>
+            <li><a href="">关于我们</a></li>
+            <li><a href="alterpwd.html">修改密码</a></li>
+            <li><a href="login.html">退出账号</a></li>
+        </ul>
+    </div>
+    <div class="row loop">
+        <!-------轮播------->
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="image/loop1.jpg" alt="...">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="image/bg.jpg" alt="...">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="image/loop2.jpg" alt="...">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 dividline"></div>
+    </div>
+    <div class="row clothtype">
+        <div class="col-xs-12 tytop">
+            <p >请选择您的衣物分类</p>
+        </div>
+    </div>
+    <div class="row cloth">
+        <div class="col-xs-6">
+            <div class="col-xs-4"><img src="image/boyshirt.png" class="img-responsive img-circle"></div>
+            <div class="col-xs-8 tytag"><span><a href="clothlist.html">秋冬上衣</a></span></div>
+        </div>
+        <div class="col-xs-6 pd">
+            <div class="col-xs-5"><img src="image/qunzi.png" class="img-responsive img-circle"></div>
+            <div class="col-xs-6 "><span>秋冬上衣</span></div>
+        </div>
+    </div>
+    <div class="row cloth">
+        <div class="col-xs-6">
+            <div class="col-xs-4"><img src="image/kuzi.png" class="img-responsive img-circle"></div>
+            <div class="col-xs-8 tytag"><span>秋冬上衣</span></div>
+        </div>
+        <div class="col-xs-6 pd">
+            <div class="col-xs-5"><img src="image/xie.png" class="img-responsive img-circle"></div>
+            <div class="col-xs-6 "><span>秋冬上衣</span></div>
+        </div>
+    </div>
+    <div class="row cloth">
+        <div class="col-xs-6">
+            <div class="col-xs-4"><img src="image/yurong.png" class="img-responsive img-circle"></div>
+            <div class="col-xs-8 tytag"><span>秋冬上衣</span></div>
+        </div>
+        <div class="col-xs-6 pd">
+            <div class="col-xs-5"><img src="image/boyshirt.png" class="img-responsive img-circle"></div>
+            <div class="col-xs-6 "><span>秋冬上衣</span></div>
+        </div>
+    </div>
+
+    <div class="row clothtype">
+        <div class="col-xs-12 btnreserve">
+            <span><a href="clothlist.html">一键预约</a></span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 dividline"></div>
+    </div>
+    <div class="row about">
+        <div class="col-xs-3"> <img id="" src="image/about.png" class="img-responsive img-thumbnail center-block"><p>关于我们</p></div>
+        <div class="col-xs-3"> <img id="" src="image/range.png" class="img-responsive img-thumbnail center-block"><p>服务范围</p></div>
+        <div class="col-xs-3"><img id="" src="image/price.png" class="img-responsive img-thumbnail center-block"><p>服务价格</p> </div>
+        <div class="col-xs-3"> <img id="" src="image/ad.png" class="img-responsive img-thumbnail center-block"><p>留言咨询</p></div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 dividline"></div>
+    </div>
+    <div class="row bottomnav pd navbar-fixed-bottom">
+        <div class="col-xs-4 " id="main"><img id="picmain" src="image/amain.png" class="img-responsive "> <a style="color: #1BBAF6">主页</a></div>
+        <div class="col-xs-3 col-xs-offset-1" id="order" style="padding-left: 10px"><img id="picorder" src="image/order.png" class="img-responsive "> <a href="orderlist.html">订单</a></div>
+        <div class="col-xs-2 col-xs-offset-2" id="mine" style="padding-left: 10px"><img id="picmine" src="image/me.png" class="img-responsive "> <a href="mine.html">我的</a></div>
+    </div>
+</div>
+</body>
+</html>

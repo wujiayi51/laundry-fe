@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>订单列表</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/usermain.css" rel="stylesheet" type="text/css">
+    <link href="css/orderlist.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<script type="text/javascript">
+    $(function(){
+        $("#ordernav1").click(function(){
+            $("#ordernav1").addClass("adcss");
+            $("#ordernav2").removeClass("adcss");
+            $("#orderall").show();
+            $("#orderover").hide();
+        });
+        $("#ordernav2").click(function(){
+            $("#ordernav2").addClass("adcss");
+            $("#ordernav1").removeClass("adcss");
+            $("#orderall").hide();
+            $("#orderover").show();
+        });
+
+    });
+</script>
+<body>
+<div class="container-fluid ">
+    <div class="row headtitle ">
+        <div class="col-xs-11 "><a href="usermain.html"><img src="image/return.png">浣衣纱干洗中心</a></div>
+        <div class="col-xs-1 user"><img src="image/us.png"></div>
+    </div>
+    <div class="userinfo">
+        <ul>
+            <li>关于我们</li>
+            <li>修改密码</li>
+            <li>退出账号</li>
+        </ul>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row ordernav">
+        <div class="col-xs-6" id="ordernav1">全部订单</div>
+        <div class="col-xs-6" id="ordernav2">已完成</div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 dividline"></div>
+    </div>
+</div>
+<!--全部订单-->
+<div class="container-fluid pd" id="orderall">
+    <div class="row oneorder">
+        <div class="col-xs-12">
+            <span style="color: #6C6C6C">订单编号：5152268423688</span>
+            <p >订单状态：<span style="color: #1BBAF6">等待领取</span></p>
+        </div>
+        <div class="col-xs-12">
+            下单日期：<span>2018-03-12 17:45:32</span>
+        </div>
+        <div class="  col-xs-12">
+            接单门店  <input type="text" class="input">
+            衣物件数  <input type="text" class="input" style="color:#F5A24C ">
+            金额  <input type="text" class="input">
+        </div>
+        <div class="row col-xs-12 ">
+            <div class="row orderfoot">
+                <div class="col-xs-3"><img src="image/aget.png">确认收货</div>
+                <div class="col-xs-3"><img src="image/aqxorder.png">取消订单</div>
+                <div class="col-xs-3"><img src="image/atousu.png">投诉</div>
+                <div class="col-xs-3"><img src="image/apingjia.png">评价</div>
+            </div>
+        </div>
+    </div>
+    <div class="row oneorder">
+        <div class="col-xs-12">
+            <span style="color: #6C6C6C">订单编号：5152268423688</span></br>
+            <span >订单状态：<span style="color: #1BBAF6">等待领取</span></span></br>
+            下单日期：<span>2018-03-12 17:45:32</span></br>
+            接单门店  <input type="text" class="input">
+            衣物件数  <input type="text" class="input" style="color:#F5A24C ">
+            金额  <input type="text" class="input">
+        </div>
+        <div class="row col-xs-12 ">
+            <div class="row orderfoot">
+                <div class="col-xs-3"><img src="image/aget.png">确认收货</div>
+                <div class="col-xs-3"><img src="image/aqxorder.png">取消订单</div>
+                <div class="col-xs-3"><img src="image/atousu.png">投诉</div>
+                <div class="col-xs-3"><img src="image/apingjia.png">评价</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row oneorder">
+        <div class="col-xs-12">
+            <span style="color: #6C6C6C">订单编号：5152268423688</span></br>
+            <span >订单状态：<span style="color: #1BBAF6">等待领取</span></span></br>
+            下单日期：<span>2018-03-12 17:45:32</span></br>
+            接单门店  <input type="text" class="input">
+            衣物件数  <input type="text" class="input" style="color:#F5A24C ">
+            金额  <input type="text" class="input">
+        </div>
+        <div class="row col-xs-12 ">
+            <div class="row orderfoot">
+                <div class="col-xs-3"><img src="image/aget.png">确认收货</div>
+                <div class="col-xs-3"><img src="image/aqxorder.png">取消订单</div>
+                <div class="col-xs-3"><img src="image/atousu.png">投诉</div>
+                <div class="col-xs-3"><img src="image/apingjia.png">评价</div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--已完成订单-->
+<div class="container-fluid pd" id="orderover">
+    <div class="row oneorder">
+        <div class="col-xs-12">
+            <span style="color: #6C6C6C">订单编号：5152268423688</span>
+            <p >订单状态：<span style="color: #1BBAF6">等待领取</span></p>
+        </div>
+        <div class="col-xs-12">
+            下单日期：<span>2018-03-12 17:45:32</span>
+        </div>
+        <div class="  col-xs-12">
+            接单门店  <input type="text" class="input">
+            衣物件数  <input type="text" class="input" style="color:#F5A24C ">
+            金额  <input type="text" class="input">
+        </div>
+        <div class="row col-xs-12 ">
+            <div class="row orderfoot">
+                <div class="col-xs-3"><img src="image/aget.png">确认收货</div>
+                <div class="col-xs-3"><img src="image/aqxorder.png">取消订单</div>
+                <div class="col-xs-3"><img src="image/atousu.png">投诉</div>
+                <div class="col-xs-3"><img src="image/apingjia.png">评价</div>
+            </div>
+        </div>
+    </div>
+    <div class="row oneorder">
+        <div class="col-xs-12">
+            <span style="color: #6C6C6C">订单编号：5152268423688</span>
+            <p >订单状态：<span style="color: #1BBAF6">等待领取</span></p>
+        </div>
+        <div class="col-xs-12">
+            下单日期：<span>2018-03-12 17:45:32</span>
+        </div>
+        <div class="  col-xs-12">
+            接单门店  <input type="text" class="input">
+            衣物件数  <input type="text" class="input" style="color:#F5A24C ">
+            金额  <input type="text" class="input">
+        </div>
+        <div class="row col-xs-12 ">
+            <div class="row orderfoot">
+                <div class="col-xs-3"><img src="image/aget.png">确认收货</div>
+                <div class="col-xs-3"><img src="image/aqxorder.png">取消订单</div>
+                <div class="col-xs-3"><img src="image/atousu.png">投诉</div>
+                <div class="col-xs-3"><img src="image/apingjia.png">评价</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row bottomnav navbar-fixed-bottom">
+        <div class="col-xs-4 " id="main"><img id="picmain" src="image/main.png" class="img-responsive "> <a href="usermain.html">主页</a></div>
+        <div class="col-xs-3 col-xs-offset-1" id="order" style="padding-left: 10px;"><img id="picorder" src="image/aorder.png" class="img-responsive "> <a href="orderlist.html" style="color: #1BBAF6">订单</a></div>
+        <div class="col-xs-2 col-xs-offset-2" id="mine" style="padding-left: 10px"><img id="picmine" src="image/me.png" class="img-responsive "> <a>我的</a></div>
+    </div>
+</div>
+
+
+</body>
+</html>

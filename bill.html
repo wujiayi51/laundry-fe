@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>账单</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/usermain.css" rel="stylesheet" type="text/css">
+    <link href="css/orderlist.css" rel="stylesheet" type="text/css">
+    <link href="css/bill.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<script type="text/javascript">
+    $(function(){
+        $("#ordernav1").click(function(){
+            $("#ordernav1").addClass("adcss");
+            $("#ordernav2").removeClass("adcss");
+            $("#rechargebill").show();
+            $("#paybill").hide();
+        });
+        $("#ordernav2").click(function(){
+            $("#ordernav2").addClass("adcss");
+            $("#ordernav1").removeClass("adcss");
+            $("#rechargebill").hide();
+            $("#paybill").show();
+        });
+
+    });
+</script>
+<body>
+<div class="container-fluid ">
+    <div class="row headtitle ">
+        <div class="col-xs-11 "><a href="usermain.html"><img src="image/return.png">浣衣纱干洗中心</a></div>
+        <div class="col-xs-1 user"><img src="image/us.png"></div>
+    </div>
+    <div class="userinfo">
+        <ul>
+            <li>关于我们</li>
+            <li>修改密码</li>
+            <li>退出账号</li>
+        </ul>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row ordernav">
+        <div class="col-xs-6" id="ordernav1">消费记录</div>
+        <div class="col-xs-6" id="ordernav2">充值记录</div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 dividline"></div>
+    </div>
+</div>
+<!--消费记录-->
+<div class="container-fluid pd" id="paybill">
+    <div class="row oneorder">
+        <div class="col-xs-12">
+            <span style="color: #6C6C6C">流水单号：5152268423688</span>
+            <!--<span >流水单号：5152268423688</span>-->
+            <p >充值日期：<span >2018-03-12 17:45:32</span></p>
+            <p >充值金额：<span >300</span></p>
+        </div>
+    </div>
+</div>
+<!--充值记录-->
+<div class="container-fluid pd" id="rechargebill">
+    <div class="row oneorder">
+        <br class="col-xs-12">
+            <span style="color: #6C6C6C">订单编号：5152268423688</span></br>
+            <span >订单状态：<span >确认收件</span></span></br>
+            <span>下单日期：</span> <span>2018-03-12 17:45:32</span></br>
+            <span>接单门店：</span>   <input type="text" class="input">
+            <span>衣物件数：</span>  <input type="text" class="input" style="color:#F5A24C ">
+            <span>金额：</span>  <input type="text" class="input">
+        </div>
+    </div>
+</div>
+</body>
+</html>
